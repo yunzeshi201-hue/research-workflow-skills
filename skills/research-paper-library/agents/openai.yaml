@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Paper Website"
+  short_description: "Stage 3: build a searchable evidence and methods library"
+  default_prompt: "Use $research-paper-library to build the accepted question set's paper website, with method-specific figures explaining claims, signals, controls, and limits, then present the site and verified corpus for acceptance."

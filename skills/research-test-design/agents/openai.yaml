@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experimental Reading and Design"
+  short_description: "Connect methods papers to controls and study decisions"
+  default_prompt: "Use $research-test-design to compare what prior studies actually did, attach verified references, and map proposed experimental steps to inspected sources within the current research stage."

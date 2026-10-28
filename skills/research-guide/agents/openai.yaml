@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Guide"
+  short_description: "Route learning, paper analysis, and staged research"
+  default_prompt: "Use $research-guide to guide my research in stages; automatically create and message same-project consultation chats, wait for their answers, verify them, and adjust the work. Prefer ChatGPT 6-Pro, then ChatGPT Thinking; use GPT-6.1 Sol for Work/Codex."

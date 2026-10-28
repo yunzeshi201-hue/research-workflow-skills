@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Questions"
+  short_description: "Stage 2: select important questions and useful readings"
+  default_prompt: "Use $research-question to select and prioritize important questions within my accepted subfield, with practical experimental readings."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Review"
+  short_description: "Stage 4: synthesize the accepted library into a review"
+  default_prompt: "Use $research-review to synthesize my accepted paper-library snapshot and explain the findings, gaps, and experimental approaches."

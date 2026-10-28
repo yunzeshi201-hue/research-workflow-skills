@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Foundations"
+  short_description: "Learn foundations with references and applied checks"
+  default_prompt: "Use $research-foundations to explain the foundations relevant to my task with references, check my understanding, and adapt the next steps to what I already know."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Papers"
+  short_description: "Classify local and online papers with cited analysis"
+  default_prompt: "Use $research-papers to analyze my local paper folder, supplement it with online literature, and show a cited report and classification plan before organizing any files."
+policy:
+  allow_implicit_invocation: true

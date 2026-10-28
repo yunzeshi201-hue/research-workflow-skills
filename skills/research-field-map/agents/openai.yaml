@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Subfield"
+  short_description: "Stage 1: define a subfield and settle its boundaries"
+  default_prompt: "Use $research-field-map to propose a subfield, its boundaries, prerequisites, and important readings, then present it for acceptance."

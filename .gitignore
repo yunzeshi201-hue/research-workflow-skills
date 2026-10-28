@@ -1,0 +1,15 @@
+# Research records and local environments are not part of the skill package.
+/research/
+/outputs/
+/backups/
+work/
+project-data/
+private/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
