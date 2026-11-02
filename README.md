@@ -1,5 +1,6 @@
 # research-workflow-skills
-通用科研技能：理解评估、本地与网络文献分析分类、问题拆解、研究网站及综述。
+
+通用科研技能：在 Research 中选择 1/2/3 级深度，完成概念理解、文献与图谱分析、科研写作；也可开展文献分类、完整研究项目及实验规划。
 
 Start by describing what you have already done, what you observed, and what you want to achieve. Choose a focused learning task, an independent local/online paper analysis, or the original four-stage research workflow. Users do not need to begin as novices or build a website merely to analyze their papers.
 
@@ -7,21 +8,21 @@ Start by describing what you have already done, what you observed, and what you 
 
 | 你现在想做什么 | 调用的技能 | 工作流程 |
 |---|---|---|
-| 学习某个领域或方法 | `research-foundations` | 简短基础说明＋可核实参考文献 → 少量应用型理解问题 → 按已有能力安排下一步；可复用已展示的理解或跳过测试 |
+| 理解概念、读论文、分析机制与图谱、科研写作 | `researchskills`（Research） | 1 快速理解 / 2 研究分析 / 3 深入论证；未选级别时先简述区别并提问，等用户选择后开始；只有用户要求训练或评估时才出练习 |
 | 分析、总结和分类文献 | `research-papers` | 提供本地路径（需要本地文献时）→ 读取本地论文并补充网络文献 → 去重、逐篇分析、跨论文比较 → 提交报告与分类方案 → 用户认可方案后在原路径下建立分类文件夹并核验 |
-| 开展完整研究项目 | `research-guide` | 根据已有知识调整深度 → 确定子领域 → 确定重要问题 → 建文献网站 → 写综述；原有阶段确认规则保留 |
+| 开展完整研究项目 | `research-guide` | 确定子领域 → 确定重要问题 → 建文献网站 → 写综述；沿用所选分析深度和原有阶段确认规则 |
 
 直接描述任务即可，由入口选择相应技能。只做文献报告时无需先建网站，也不强制进行知识测试。分类报告应列出分类标准、每类文献、分类理由、交叉归属、争议与证据缺口，并区分本地论文和网上补充。用户仅需要分类报告时，交付报告即可，不必继续整理文件。
 
-文件整理前会展示具体文件到文件夹的对应关系、复制或移动方式及冲突处理。默认复制并保留原件；只有明确选择移动的方案获得认可后才移动。确认分类不代表接受研究项目的其他阶段。知识检查、在线检索和本地盘点可在依赖允许时并行，后续结论仍须等待相应证据。
+文件整理前会展示具体文件到文件夹的对应关系、复制或移动方式及冲突处理。默认复制并保留原件；只有明确选择移动的方案获得认可后才移动。确认分类不代表接受研究项目的其他阶段。在线检索和本地盘点可在依赖允许时并行，后续结论仍须等待相应证据。
 
 ## Quick start
 
-In a client where the skills are installed, open your research project and describe your field or current work, observations, and desired outcome. Normal task matching can select the coordinator automatically. To choose it explicitly, select **Research Guide** from the skill picker or mention `$research-guide` in Codex. You do not need to paste the internal consultation brief. See the current [skill invocation and installation guidance](https://learn.chatgpt.com/docs/build-skills).
+In a client where the skills are installed, open your research project and describe your field or current work, observations, and desired outcome. Normal task matching can select the coordinator automatically. For focused research work, select **Research** or mention `$researchskills`. For the full staged project, choose **Research Guide** or `$research-guide`. You do not need to paste the internal consultation brief. See the current [skill invocation and installation guidance](https://learn.chatgpt.com/docs/build-skills).
 
 The coordinator first selects the requested route. In the full research route it starts at the earliest unsettled stage and reuses existing accepted decisions. Review each concrete stage result and accept it or ask for changes before the next stage. Standalone learning and paper-analysis tasks have their own scope; they do not alter those stage decisions.
 
-The package provides instructions and templates. Automatic consultation also needs a supported chat-creation/read/wait interface, an available requested model, and actual user authorization. Installing the files does not add those capabilities or turn Work/Codex into regular ChatGPT Pro.
+The package provides instructions and templates. Depth selection changes the analysis, not the app model. Work stays in the current task; a separately requested chat needs supported tools and the actual user request.
 
 **For the full research route, settle each stage before starting the next.** The agent prepares a concrete result and marks it ready. The user accepts that version or requests changes. A completed draft, successful test, or published website does not substitute for that decision.
 
@@ -47,9 +48,9 @@ Describe completed work, observations, and desired outcome
 | 3 | [research-paper-library](skills/research-paper-library/SKILL.md) | Working paper website, verified records, question mappings, practical method cards, coverage limits, and a portable corpus export | Whether the website and this corpus version are ready to support a review |
 | 4 | [research-review](skills/research-review/SKILL.md) | Question-led synthesis of findings, disagreements, methods, limitations, open problems, and a practical research reading route | Whether the review accurately represents the evidence and chosen scope |
 
-[research-guide](skills/research-guide/SKILL.md) coordinates the sequence and resumes from recorded decisions. [research-foundations](skills/research-foundations/SKILL.md) and [research-test-design](skills/research-test-design/SKILL.md) are supporting skills within the current stage. They do not add stages or unlock later ones.
+[research-guide](skills/research-guide/SKILL.md) coordinates the sequence and resumes from recorded decisions. [researchskills](skills/researchskills/SKILL.md) supplies explanations and evidence analysis; [research-test-design](skills/research-test-design/SKILL.md) supplies feasibility/design support. Supporting work does not add stages or unlock later ones.
 
-The distribution has eight skill folders: one coordinator, four stage skills, two helpers, and [research-papers](skills/research-papers/SKILL.md) for independent or supporting paper analysis. Use the coordinator to select a route or guide a project. Directly invoking a later-stage skill still checks its prerequisites. The paper-analysis route can produce a standalone report without invoking the stage-4 review skill.
+The distribution has eight skill folders: the main Research entry, one project coordinator, four stage skills, the test-design helper, and [research-papers](skills/research-papers/SKILL.md) for collection analysis and filing. Use the coordinator to select a route or guide a project. Directly invoking a later-stage skill still checks its prerequisites. The paper-analysis route can produce a standalone report without invoking the stage-4 review skill.
 
 ## Local and online paper analysis
 
@@ -67,17 +68,15 @@ You do not need a formal proposal or even a field name. Give a rough account of 
 
 The [intake guide](skills/research-guide/references/research-intake.md) supports whichever stage is active. Intake does not add another acceptance gate. Existing user decisions remain usable; completed activities alone do not imply that a stage has been accepted.
 
-## Automatic consultation inside the current stage
+## Research depth and reasoning checks
 
-For a consequential uncertainty, the coordinator identifies the decision, assembles the context, creates a chat in the same verified project, submits the question, waits for the completed answer, checks it against the sources, and adjusts the active work. The user does not need to find or paste a prompt. The [consultation brief](skills/research-guide/assets/deep-research-handoff.md) is an internal payload filled by the coordinator.
+Choose **1 快速理解** (core idea and main caveat), **2 研究分析** (mechanisms, methods and evidence; recommended), or **3 深入论证** (alternatives, assumptions and decisive checks) in Research. Natural requests such as “简单讲一下” or “深入分析” work too. If no level is supplied, clearly implied or already chosen, the skill asks once with these brief descriptions and waits for your answer. A related follow-up or helper retains the choice. If you ask the agent to choose, it selects a suitable level and proceeds. Depth does not change the model, create a chat, expand a bounded corpus, or advance a research stage.
 
-Prefer regular **ChatGPT Chat with the requested 6-Pro model**, with **ChatGPT Thinking** when Pro is unavailable. Any requested **Work/Codex** consultation uses **GPT-6.1 Sol**. A Work/Codex model setting does not make it a regular ChatGPT Pro chat, and a preference for Sol there does not itself authorize changing product destinations.
+Foundational explanations are part of Research. Knowledge tests, prerequisite maps and study plans are only produced when requested. A short conceptual answer does not need a saved library or workflow record.
 
-Use the app's supported chat tools and the [routing guide](skills/research-guide/references/model-routing.md). A standing human instruction to create and message consultation chats authorizes the loop within its scope; reuse it without asking for every question. The empty public template grants no permissions. A later automatic instruction supersedes earlier prepare-only preferences; prepare-only remains available when explicitly requested.
+For a consequential uncertainty, use bounded reasoning and an independent subagent check when useful and available. Follow the user's latest verified model choice. The [routing guide](skills/research-guide/references/model-routing.md) covers delegation and separately requested consultations; no model or product is hard-coded as a default.
 
-Resolve the exact project and current model capability before dispatch. An unavailable regular-Chat creation tool does not prove the user lacks Pro access. Report that capability gap instead of silently changing products, opening a browser workaround, or asking the user to paste the prompt. A browser route needs its own user instruction. Continue independent research work while dependent decisions remain pending.
-
-A dispatch acknowledgment is not an answer. Reuse the same chat for authorized clarification, retrieve the full response, verify decisive claims and source details, and record adopted/rejected recommendations and the resulting artifact revision. Timeouts remain pending. Do not create duplicate or recursive chats. Another model's answer cannot accept a stage or serve as experimental confirmation.
+A separate user-owned chat requires an explicit user request and supported tools. If requested, prepare the [brief](skills/research-guide/assets/deep-research-handoff.md), dispatch once, retrieve the actual answer, verify source-backed claims and apply supported changes. A depth-3 request or template setting is not a request to create a new chat. Another agent's answer does not accept a stage or establish scientific evidence.
 
 ## A paper website organized around questions
 
@@ -132,15 +131,12 @@ Use $research-papers to analyze papers in [folder path], supplement them
 with relevant online studies, and report the proposed categories and
 evidence comparisons. Show the file plan before organizing the folder.
 
-Use $research-foundations to explain the concepts relevant to [task]
-with references, check what I understand, and adapt the next step.
+Use $researchskills, depth 1, to explain the concepts relevant to [task].
+Use depth 2 for research analysis, or 3 to examine the alternatives in depth.
 
 Use $research-guide. Here is what we have already done: [rough notes].
 We observed [observations], think [interpretation], and want [outcome].
-Help identify the next decision. Prefer Pro for difficult reasoning; if
-I cannot use Pro, use ChatGPT Thinking. Automatically create and message
-consultation chats in this project, wait for their answers, verify them,
-and adjust our work. For any Work/Codex chat I request, use GPT-6.1 Sol.
+Help identify the next decision at depth 2 and work on the current stage.
 
 Use $research-guide. I want to explore [field]. Start by helping me settle
 one subfield. Show the evidence and important introductory articles, and
@@ -161,7 +157,7 @@ These prompts illustrate decisions on artifacts the user has actually inspected.
 
 Store the workflow record, evidence, data, and reviews in the research project, outside installed skills. The [stage-gate contract](skills/research-guide/references/stage-gates.md) defines acceptance, conditional decisions, resumption, and revision. An [empty record template](skills/research-guide/assets/workflow-state.example.json) contains no approvals.
 
-The version-4 record separates automatic routing, product/model choices, and authorization. Existing version-2 or version-3 stage decisions need no new acceptance solely because the record format changes. Keep filled briefs and consultation records in private project storage, outside the reusable package.
+The version-4 record keeps depth, optional consultation preferences, and actual authorization separate. Its current default stays in the current task and specifies no model. Existing version-2 or version-3 stage decisions need no new acceptance solely because the record format changes. Keep filled briefs and consultation records in private project storage, outside the reusable package.
 
 If scope or the corpus changes materially, preserve the earlier accepted version and reopen the affected checkpoint. Deeper reading within the accepted corpus is part of review writing; adding new papers to that corpus needs a new snapshot decision. Cosmetic corrections do not automatically restart the scientific workflow.
 

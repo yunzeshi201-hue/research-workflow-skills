@@ -48,15 +48,16 @@
     "verification_status": "not_collected"
   },
   "reasoning_preferences": {
-    "routing_mode": "automatic_same_project",
-    "preferred_product": "chatgpt_chat",
-    "requested_model_label": "ChatGPT 6-Pro",
-    "same_product_fallback_label": "ChatGPT Thinking",
-    "work_codex_model_label": "GPT-6.1 Sol",
+    "routing_mode": "current_chat",
+    "preferred_product": null,
+    "requested_model_label": null,
+    "same_product_fallback_label": null,
+    "work_codex_model_label": null,
     "work_codex_substitution_authorization": null,
     "transport_preference": "app_tools",
     "creation_authorization": null,
-    "followup_authorization": null
+    "followup_authorization": null,
+    "depth_level": null
   },
   "handoffs": []
 }

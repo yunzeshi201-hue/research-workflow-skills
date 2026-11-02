@@ -25,7 +25,7 @@ Ask only for missing details that change the next decision, grouping a few close
 
 ## Enter the right scope without restarting the science
 
-A request only to analyze local/online literature goes directly to `research-papers`; do not require selection of a new research direction. Ask for the local folder path if needed. For field learning or project planning, use a short referenced orientation and applied understanding checks from `research-foundations` to adapt depth. Existing work can demonstrate understanding; do not demand repeated tests or make a quiz a prerequisite for paper inventory.
+A collection analysis or filing request goes directly to `research-papers`; ask for the local folder path only if needed. Focused explanations, reading and mechanism analysis go to `researchskills` at the selected 1/2/3 depth. If depth is unsettled, ask which level the user wants with brief descriptions and wait; combine this with any missing topic or source-folder question. Do not require a new research direction or a knowledge test. Explain only the prerequisites relevant to the current task; provide assessment or a learning plan only when requested.
 
 If the researcher already has a specific system, subfield, or question, use it as the starting scope. Do not force a broad ranking exercise merely because this is a new chat. Reuse verified earlier acceptance; otherwise present the existing scope as the concrete stage-1 checkpoint.
 
@@ -35,6 +35,6 @@ Having completed work does not itself accept the subfield, question set, or corp
 
 Choose a bounded question whose answer could change the current plan: conflicting explanations, an unsupported inference, an uncertain experimental transfer, a literature contradiction, or a costly choice between methods. Explain why a separate reasoning pass could help. Routine extraction, simple factual checks, and metadata cleanup do not need another chat.
 
-Use [model-routing.md](model-routing.md) to dispatch an authorized consultation within the current stage, wait for its answer, verify it, and adjust the work. The coordinator prepares the prompt internally. Include both favorable and contrary evidence. If there is not enough context to state a useful question, gather it in the current chat rather than create an empty consultation. A better model cannot replace missing data, missing Methods, or user acceptance.
+Analyze the bounded question in the current task, with a subagent check when useful and permitted. Use [model-routing.md](model-routing.md) if delegation or a separate consultation is needed; a new user-owned chat requires an explicit user request. Include favorable and contrary evidence. If context is insufficient, gather the missing facts here. Another model cannot replace missing data, missing Methods, or user acceptance.
 
 Keep the filled intake, handoff, and research details in the private project records. The reusable skill and public package contain only the method and empty templates.

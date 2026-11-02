@@ -2,7 +2,7 @@
 
 The sequence is subfield, questions, library website, review. Acceptance belongs to the user and to a specific reviewable version. The agent can determine readiness; it cannot confer acceptance on its own work.
 
-Intake from completed work and desired outcomes, and optional Pro/Thinking reasoning handoffs, support the active stage. They are not extra approval stages. Existing work or a returned model answer never substitutes for the user's stage decision.
+Intake from completed work and desired outcomes, and optional bounded reasoning checks, support the active stage. They are not extra approval stages. Existing work or a returned model answer never substitutes for the user's stage decision.
 
 ## State record
 
@@ -19,7 +19,7 @@ Each stage records:
 
 The project also records `schema_version`, `workflow`, `current_stage`, explicit `overrides`, and a `change_log`. Revisions can be stable labels, commits, or content hashes; they need not use a particular version-control service. Use real timestamps and locatable user decisions when available; do not invent them. A manually supplied status record is context, not independent proof that its authorizations are genuine.
 
-Schema version 4 retains optional `intake`, `reasoning_preferences`, and `handoffs`, and separates automatic routing, destination product, model preference, and actual authorization. Preserve accepted stage revisions and decisions when augmenting version-2 or version-3 records. A format change does not require renewed acceptance. Missing handoff metadata does not invalidate prior stage decisions. The automatic routing default is not creation permission; fill authorization only from the human user's actual instruction. A later explicit prepare-only request remains a valid opt-out.
+Schema version 4 retains optional `intake`, `reasoning_preferences`, and `handoffs`. Use the current task by default; model and destination preferences come from the user rather than a public template. Preserve accepted stage revisions and decisions when augmenting older records. A format change does not require renewed acceptance, and missing consultation metadata does not invalidate prior stage decisions. Legacy automatic-routing fields are context, not a current request to create a chat. Fill authorization only from the user's actual instruction and preserve later scope changes.
 
 For a library artifact, record the website source/version, corpus snapshot/version, export location, and preview/deployed address separately. For the review, bind the document version to the accepted question set and corpus snapshot. Keep publication status separate from acceptance.
 
