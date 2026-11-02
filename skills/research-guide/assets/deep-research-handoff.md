@@ -1,6 +1,6 @@
 # Research Consultation Brief
 
-The coordinator fills this brief from available evidence and sends it as the initial message of the authorized same-project consultation. The user does not need to find or paste it. Keep a completed brief outside the public skill package. Select the product and model through actual tools; this text cannot select or verify them.
+Use this optional brief for a bounded subagent check or an explicitly requested separate consultation. Fill it from available evidence; the user does not need to copy it. Keep completed briefs outside the reusable skill package. A brief cannot authorize creating a chat or select a model. Respect the user's actual request and verified model choice.
 
 ## Context to fill before dispatch
 

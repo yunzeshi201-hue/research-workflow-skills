@@ -1,30 +1,25 @@
-# Choose the Requested Route
+# Choose the requested research route
 
-Use the user's desired output, supplied work, and existing decisions to choose a route. Ask one concise clarification only when the request could reasonably mean different deliverables. Do not require users to know skill names.
+Use the desired output and existing decisions. Users do not need to know skill names. These routes are alternatives, not mandatory successive steps.
 
-| User's immediate goal | Entry point | Deliverable and boundary |
+| Immediate goal | Entry point | Boundary |
 |---|---|---|
-| Understand a field, method, or prerequisite | research-foundations | Referenced explanation, brief applied understanding check where useful, and a tailored next task; no mandatory research project |
-| Summarize, classify, compare, or organize papers | research-papers | Local and online paper inventory, evidence analysis, proposed classification, and report; accepted file plan before category folders or file organization |
-| Choose and pursue a research direction through a website and review | research-guide | Existing subfield -> questions -> website/corpus -> review sequence, with its original user acceptance checkpoints |
+| Understand a concept, field or method; read a paper; analyze a mechanism or figure; draft supported research text | researchskills | Answer at the chosen depth 1/2/3; if none is chosen, briefly describe the levels, ask and wait. No mandatory test, project-stage record or new chat. |
+| Summarize, classify, compare or organize a paper collection | research-papers | Produce the inventory and report; show the concrete file plan before physical filing. Retain the selected analysis depth. |
+| Pursue a subfield through questions, paper website and review | research-guide | Apply the four original stages and reuse valid version-specific acceptance. |
 
-## Calibrate, then do the work
+A supporting skill performs a bounded piece of work and returns it to the active task. Do not redirect between coordinators repeatedly. A concept explanation remains in researchskills even when a project exists; it does not reset stage decisions. A separately requested standalone paper report does not require stage-4 prerequisites.
 
-For learning and research planning, begin from what the researcher can already explain or do. Give a short orientation with verified references to the relevant concepts and their limits. When understanding is uncertain, ask a small prediction, interpretation, or critique question. Adjust depth from the answer; do not infer incompetence from unfamiliar wording or expert status from a self-label alone. Existing work can supply this evidence without a new exercise. A skipped or unanswered check leaves depth provisional and does not block independent work.
+For a research task with no supplied, clearly implied or inherited level, researchskills asks which level the user wants, briefly describes 1 quick understanding, 2 research analysis (recommended), and 3 deep critical analysis, and waits for a choice. Reuse the chosen depth for related follow-ups and helper handoffs. A recommendation is not a default answer; if the user asks the agent to choose, state a suitable selection and proceed. A stage number, question ID or figure panel is not a depth selection. None of the three levels selects a different model or creates another chat.
 
-For papers-only tasks, start with the corpus and requested analysis. Provide definitions in the report where needed; do not require a knowledge test. Ask for the folder path when local reading is requested. The user is choosing the files to inspect, not granting access to search their entire computer.
+For local paper work, ask for the source folder only if it is missing. Inventory only the authorized location. Local inventory and online discovery can proceed independently once scope is known; dependent conclusions wait for the necessary evidence. Explain concepts where useful without testing the user unless training or assessment was requested.
 
-## Parallel capabilities, explicit dependencies
+Preserve the full project's stage record when switching temporarily to a standalone task. Classification approval settles only the displayed file plan. If the user later resumes the full project, reconcile the report's scope, sources and version with the active stage; do not silently replace an accepted corpus.
 
-These skills can be invoked independently. In a combined task, local inventory and online discovery may proceed alongside each other once scope is known. Merge and deduplicate their records before synthesizing evidence. A learning explanation may proceed while files are inventoried, but dependent interpretation waits for the necessary source or user answer. Parallel capability does not require creating additional chats; consultation follows the existing authorization and model-routing rules.
+Examples:
 
-Preserve the full project's stage record when switching temporarily to a standalone task. Record the task's scope and output version separately. Classification approval settles a file plan. It does not accept research questions, a website corpus, or a final review.
-
-If the user asks to resume the full project, reuse prior accepted artifacts and reconcile the standalone report against the active stage. Offer relevant papers as candidates; do not silently replace an accepted corpus with a new search result. Only affected scientific checkpoints need reconsideration.
-
-## Minimal examples
-
-- "Explain this method; I know the underlying theory." Use a focused referenced refresher and one relevant interpretation task if needed.
-- "Classify my local papers and add recent online studies." Request the folder path if absent, analyze and report, then present a concrete category and file-operation plan for acceptance.
-- "Help me find an important research problem." Calibrate background and work on the earliest unsettled research stage.
-- "I only need a paper report today; keep the research project where it is." Run the standalone paper route and preserve project-stage decisions.
+- “简单讲一下这个方法”: researchskills, depth 1, direct explanation.
+- “3，继续分析刚才的两篇论文”: researchskills, depth 3, same two-paper boundary.
+- “分类我的本地论文并补充最近研究”: research-papers, request the folder if absent, report before filing.
+- “从选题到文献网站再到综述带我做”: research-guide, start at the earliest unsettled stage.
+- “进入第3阶段”: consult the existing stage record; do not interpret it as a depth change.

@@ -2,6 +2,22 @@
 
 Use fresh evaluators with only the relevant skill, any needed references, and the scenario input. Keep expected behaviors hidden until after the response. These are synthetic instruction tests, not a research-success benchmark. Real field recommendations still need verified sources.
 
+## Unified Research depth
+
+| Case | Input | Behavior to inspect |
+|---|---|---|
+| Direct explanation | “简单讲一下瞬态吸收，别考我” | Uses Research depth 1, answers directly, no quiz, library requirement or project-stage gate |
+| No level given | A focused research-analysis request with no depth preference | Asks which level the user wants, briefly describes 1/2/3, and waits for a reply before substantive analysis; does not treat recommended 2 as a selection |
+| Helper inherits depth | Parent task selected 3 before invoking a helper | Uses 3 without asking the same question again |
+| Missing folder and depth | User requests local paper analysis with no folder or depth | Bundles the source-folder request and brief 1/2/3 choice into one question; does not search the computer |
+| Agent chooses on request | User says “Choose the level for me” | States a suitable choice and proceeds; no redundant menu |
+| Deep but bounded | “按3级分析，只看这两篇论文” | Retains the two-paper boundary, compares evidence and alternatives, no automatic chat or model switch |
+| Contextual number | After choosing depth 1, user replies “3” about that choice | Continues the same task at depth 3 |
+| Stage number | User says “进入第3阶段” with questions accepted | Uses the project-stage record; does not treat 3 as a depth selection |
+| Complete corpus at shallow depth | User requests all supplied papers at depth 1 | Processes the requested corpus, shortens the synthesis, does not silently sample |
+| Requested assessment | User explicitly asks for a learning plan and applied assessment | Gives relevant foundations and a useful task, responds to the actual answer, keeps independent work moving |
+| Main skill button | User invokes Research without requesting a new chat or model | Prompt asks which depth is wanted, with brief descriptions, and waits when no level was chosen; no automatic consultation destination or model preference |
+
 ## Four-stage gates
 
 | Case | Input | Behavior to inspect |

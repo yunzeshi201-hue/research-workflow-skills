@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research"
+  short_description: "Research depth 1/2/3: explain, analyze, and examine evidence"
+  default_prompt: "Use $researchskills for my research task. If no depth is already chosen, ask me to choose 1, 2, or 3, briefly describe each level, and wait for my choice."

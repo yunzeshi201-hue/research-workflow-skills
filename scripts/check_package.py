@@ -10,7 +10,7 @@ import sys
 EXPECTED = {
     "research-guide",
     "research-field-map",
-    "research-foundations",
+    "researchskills",
     "research-question",
     "research-test-design",
     "research-paper-library",
