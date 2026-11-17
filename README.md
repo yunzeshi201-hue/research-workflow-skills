@@ -1,17 +1,18 @@
 # research-workflow-skills
-通用科研技能：理解评估、本地与网络文献分析分类、问题拆解、研究网站及综述。
+通用科研技能：理解评估、本地与网络文献分析分类、问题拆解、研究网站、综述及科研 PPT。
 
 Start by describing what you have already done, what you observed, and what you want to achieve. Choose a focused learning task, an independent local/online paper analysis, or the original four-stage research workflow. Users do not need to begin as novices or build a website merely to analyze their papers.
 
-## 三个并列入口
+## 四个并列入口
 
 | 你现在想做什么 | 调用的技能 | 工作流程 |
 |---|---|---|
 | 学习某个领域或方法 | `research-foundations` | 简短基础说明＋可核实参考文献 → 少量应用型理解问题 → 按已有能力安排下一步；可复用已展示的理解或跳过测试 |
 | 分析、总结和分类文献 | `research-papers` | 提供本地路径（需要本地文献时）→ 读取本地论文并补充网络文献 → 去重、逐篇分析、跨论文比较 → 提交报告与分类方案 → 用户认可方案后在原路径下建立分类文件夹并核验 |
+| 制作或修改科研 PPT | `research-ppt` | 使用已有图表与模板 → 按听众组织主线 → 制作并核查幻灯片；优先引用正式发表版，无外部引用的页面不加引用脚注 |
 | 开展完整研究项目 | `research-guide` | 根据已有知识调整深度 → 确定子领域 → 确定重要问题 → 建文献网站 → 写综述；原有阶段确认规则保留 |
 
-直接描述任务即可，由入口选择相应技能。只做文献报告时无需先建网站，也不强制进行知识测试。分类报告应列出分类标准、每类文献、分类理由、交叉归属、争议与证据缺口，并区分本地论文和网上补充。用户仅需要分类报告时，交付报告即可，不必继续整理文件。
+直接描述任务即可，由任务匹配相应技能；独立 PPT 任务也可直接调用 `$research-ppt`，无需进入四阶段研究流程。只做文献报告时无需先建网站，也不强制进行知识测试。分类报告应列出分类标准、每类文献、分类理由、交叉归属、争议与证据缺口，并区分本地论文和网上补充。用户仅需要分类报告时，交付报告即可，不必继续整理文件。
 
 文件整理前会展示具体文件到文件夹的对应关系、复制或移动方式及冲突处理。默认复制并保留原件；只有明确选择移动的方案获得认可后才移动。确认分类不代表接受研究项目的其他阶段。知识检查、在线检索和本地盘点可在依赖允许时并行，后续结论仍须等待相应证据。
 
@@ -49,7 +50,13 @@ Describe completed work, observations, and desired outcome
 
 [research-guide](skills/research-guide/SKILL.md) coordinates the sequence and resumes from recorded decisions. [research-foundations](skills/research-foundations/SKILL.md) and [research-test-design](skills/research-test-design/SKILL.md) are supporting skills within the current stage. They do not add stages or unlock later ones.
 
-The distribution has eight skill folders: one coordinator, four stage skills, two helpers, and [research-papers](skills/research-papers/SKILL.md) for independent or supporting paper analysis. Use the coordinator to select a route or guide a project. Directly invoking a later-stage skill still checks its prerequisites. The paper-analysis route can produce a standalone report without invoking the stage-4 review skill.
+The distribution has nine skill folders: one coordinator, four stage skills, two helpers, [research-papers](skills/research-papers/SKILL.md) for independent or supporting paper analysis, and [research-ppt](skills/research-ppt/SKILL.md) for standalone research presentations. Use the coordinator to select a route or guide a project. Directly invoking a later-stage skill still checks its prerequisites. The paper-analysis route can produce a standalone report without invoking the stage-4 review skill.
+
+## Research presentations
+
+Use [research-ppt](skills/research-ppt/SKILL.md) with your figures, audience, timing and existing template. It covers scientific storytelling, consistent typography, editable content where supported, speaker notes and slide review. Actual presentation creation/export requires an available presentation tool; optional TAS and storyline skills are not bundled.
+
+Slide footers cite the sources actually used on that slide. Prefer the verified published version of a paper over arXiv or another preprint; label a necessary preprint exception and check that the cited version supports the figure or claim. A slide with no external source needs no citation footer or placeholder. Adapted literature figures and literature-based interpretations still require attribution. Personal author details, sample data, templates and standing file-deletion permissions are not part of this public skill.
 
 ## Local and online paper analysis
 
@@ -123,9 +130,9 @@ See the [experimental reading guide](skills/research-test-design/references/expe
 
 ## Start and resume
 
-Install all eight complete folders under `skills/`. In Codex, ask `$skill-installer` to install the eight research skill folders from this repository URL. The installer resolves its supported destination and checks existing installations. The repository's `skills/` directory is a distribution layout, not by itself a guaranteed discovery path.
+Install all nine complete folders under `skills/`. In Codex, ask `$skill-installer` to install the nine research skill folders from this repository URL. The installer resolves its supported destination and checks existing installations. The repository's `skills/` directory is a distribution layout, not by itself a guaranteed discovery path.
 
-For manual installation, use the locations documented by your current client. Current Codex documentation lists `.agents/skills` for repository skills and `~/.agents/skills` for user skills; some installed clients and the bundled installer use `$CODEX_HOME/skills`, usually `~/.codex/skills`. Preserve a working installation and avoid duplicate copies with the same skill name. Verify the eight names in the skill catalog; if changes do not appear, restart the client. The package needs no API key or Python library merely to load its instructions; actual research and website work depend on available tools. [Installation guidance](https://learn.chatgpt.com/docs/build-skills).
+For manual installation, use the locations documented by your current client. Current Codex documentation lists `.agents/skills` for repository skills and `~/.agents/skills` for user skills; some installed clients and the bundled installer use `$CODEX_HOME/skills`, usually `~/.codex/skills`. Preserve a working installation and avoid duplicate copies with the same skill name. Verify the nine names in the skill catalog; if changes do not appear, restart the client. The package needs no API key or Python library merely to load its instructions; actual research and website work depend on available tools. [Installation guidance](https://learn.chatgpt.com/docs/build-skills).
 
 ```text
 Use $research-papers to analyze papers in [folder path], supplement them
@@ -183,7 +190,7 @@ Contribute general methods and generic examples. Keep project histories, unpubli
 
 ## Upload or maintain this repository
 
-Upload the extracted release contents at the repository root: `README.md`, `LICENSE`, `.gitignore`, `skills/`, `scripts/`, and `evals/`. Keep the eight skill folders intact. The ZIP is a download bundle; GitHub does not unpack an uploaded ZIP into installable skill folders.
+Upload the extracted release contents at the repository root: `README.md`, `LICENSE`, `.gitignore`, `skills/`, `scripts/`, and `evals/`. Keep the nine skill folders intact. The ZIP is a download bundle; GitHub does not unpack an uploaded ZIP into installable skill folders.
 
 On GitHub, choose **Add file > Upload files**, add those extracted files and folders, inspect the proposed changes, then commit. For updates to an established default branch, use a new branch and pull request. If a repository already has its own README or license, reconcile them rather than overwrite them blindly. [GitHub upload instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
 

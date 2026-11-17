@@ -16,6 +16,7 @@ EXPECTED = {
     "research-paper-library",
     "research-review",
     "research-papers",
+    "research-ppt",
 }
 REQUIRED = ("README.md", "LICENSE", ".gitignore", "evals/scenarios.md",
             "evals/validation.md")
