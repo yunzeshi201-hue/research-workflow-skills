@@ -54,7 +54,7 @@ The distribution has nine skill folders: one coordinator, four stage skills, two
 
 ## Research presentations
 
-Use [research-ppt](skills/research-ppt/SKILL.md) with your figures, audience, timing and existing template. It covers scientific storytelling, consistent typography, editable content where supported, speaker notes and slide review. Actual presentation creation/export requires an available presentation tool; optional TAS and storyline skills are not bundled.
+Use [research-ppt](skills/research-ppt/SKILL.md) with your figures, audience, timing and existing template. It covers scientific storytelling, consistent typography, editable content where supported, speaker notes and slide review. After Contents, every slide within the same part keeps the same main title as that part's Contents entry; page-specific topics belong in body text or a subtitle. Recheck titles by part after finalizing the content. Actual presentation creation/export requires an available presentation tool; optional TAS and storyline skills are not bundled.
 
 Slide footers cite the sources actually used on that slide. Prefer the verified published version of a paper over arXiv or another preprint; label a necessary preprint exception and check that the cited version supports the figure or claim. A slide with no external source needs no citation footer or placeholder. Adapted literature figures and literature-based interpretations still require attribution. Personal author details, sample data, templates and standing file-deletion permissions are not part of this public skill.
 
