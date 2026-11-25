@@ -10,13 +10,14 @@ import sys
 EXPECTED = {
     "research-guide",
     "research-field-map",
-    "research-foundations",
+    "researchskills",
     "research-question",
     "research-test-design",
     "research-paper-library",
     "research-review",
     "research-papers",
     "research-ppt",
+    "dse-essay-feedback",
 }
 REQUIRED = ("README.md", "LICENSE", ".gitignore", "evals/scenarios.md",
             "evals/validation.md")
@@ -65,6 +66,8 @@ def check(root):
             if not fields.get("description", "").strip("\"' "):
                 errors.append(f"{name}: empty description")
         ui = folder / "agents" / "openai.yaml"
+        if name == "dse-essay-feedback" and not ui.exists():
+            continue  # Standalone skill on main, with no Codex picker metadata.
         if not ui.is_file():
             errors.append(f"{name}: missing UI metadata")
         elif ("$" + name) not in ui.read_text(encoding="utf-8"):

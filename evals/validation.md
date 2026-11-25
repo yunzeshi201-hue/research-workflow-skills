@@ -88,6 +88,24 @@ Two independent evaluators read the relevant skills and supplied fictional reque
 
 The mixed-corpus simulation distinguished three indexed record slots from a verified count of distinct studies because one record was unreadable. Missing root/hash information kept its illustrated file plan from being presented as ready for real execution. No actual move, copy, local OCR, network search, or scientific claim was validated. File-operation tooling must still be tested on isolated fixtures when a real batch implementation is written. These checks do not show that automatic model consultation or a real library analysis succeeds on every client.
 
+## Unified Research depth revision
+
+The standalone foundations entry was removed and its useful explanation/learning guidance merged into `researchskills` (Research). Depths are 1 quick understanding, 2 research analysis (default), and 3 deep critical analysis. The project coordinator now applies only to an explicitly requested staged project. Entry metadata, routing references, the empty state template and maintained source were updated together. No default selects a consultation model or creates a separate chat.
+
+Three changed installed entries and all eight maintained-source entries passed the skill validator in UTF-8 mode. The 60-file package passed the existing structure, local-link and configured privacy checks. Source/installed content matched, except for the intentionally empty source registry and its distribution license. The installed personal registry was unchanged. Five stage/design skill trees and all four stage-template records were unchanged; the removed entry had no remaining active references in the inspected user skill roots.
+
+An isolated agent read the current skills and produced five synthetic responses: a short supplied-result explanation, an abstract-only comparison at depth 3, a contextual numeric depth change, entry into project stage 3 after upstream acceptance, and a local collection request without a path. It selected the intended task routes, kept source-access limits, avoided a quiz or unrequested new chat, and requested the necessary folder rather than searching the computer. It identified ambiguity between one-off reading and persistent note creation, and between a registered library and an unspecified local collection. The relevant reading/output and folder-precedence instructions were clarified, then the changed entry and package checks passed again.
+
+These are instruction-level simulations and structural checks. They did not browse real papers, create a website, test app picker refresh, organize actual papers, or prove model routing on future clients. Historical consultation tests above describe earlier revisions and do not define the current defaults.
+
+## Ask-before-analysis depth selection
+
+The current revision replaces the earlier automatic level-2 default with a user choice. When a research request has no explicit, clearly implied or inherited level, Research briefly describes all three levels, asks which is wanted and waits for the answer. Level 2 is recommended, not preselected. Related follow-ups and supporting skills retain an existing choice. A missing source-folder question is combined with the depth question. The public empty-state template has a null depth.
+
+An isolated evaluator read the updated installed skills and produced five synthetic first replies. It asked for depth before analyzing an unqualified hypothetical result; answered directly at explicit level 1; retained an inherited level 3 in a helper; bundled folder and depth requests for local-paper analysis; and continued at level 2 after the user replied “2”, without asking again. These tests inspected instruction-following choices, not actual app rendering, real papers, file organization or future model routing.
+
+The three changed installed entries passed the skill validator in UTF-8 mode; UI metadata parsed, automatic invocation stayed enabled, and the personal library registry remained unchanged. The maintained package passed its existing structure, links and configured privacy checks. A generic institutional-access phrase replaces a personal institution reference in the reusable entry. Historical tests above describe earlier revisions and do not restore their defaults.
+
 ## Limits and future evaluation
 
 The earlier qualitative AI spot checks covered seven initial cases plus two targeted retests; the update reviews are described separately above. They are not a calibrated benchmark or human peer review. Scenarios listed in `scenarios.md` beyond those above remain future tests. Scientific-reasoning tests from the earlier ungated version do not establish compliance with the revised gates.

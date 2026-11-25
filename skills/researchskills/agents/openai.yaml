@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research"
+  short_description: "Research depth 1/2/3: explain, analyze, and examine evidence"
+  default_prompt: "Use $researchskills for my research task. For explanation or analysis, ask for depth 1, 2, or 3 if I have not chosen. Route research PPT authoring to $research-ppt."

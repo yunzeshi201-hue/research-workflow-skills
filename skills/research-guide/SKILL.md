@@ -1,11 +1,11 @@
 ---
 name: research-guide
-description: "Route research requests to an adaptive learning check, standalone local/online paper analysis, or the four-stage subfield-to-review workflow. Coordinate authorized same-project consultations and preserve the active workflow's acceptance decisions."
+description: "Coordinate an explicitly requested four-stage research project: settle a subfield, choose questions, build a paper-library website, and write a review. Resume accepted stage decisions. Focused explanations, paper reading, figure analysis and standalone research questions belong to researchskills."
 ---
 
 # Research Guide
 
-Choose the workflow that matches the requested outcome before applying stage gates. Use [task-routing.md](references/task-routing.md) to distinguish learning, standalone paper analysis, and a full research project. These are parallel entry points, not mandatory successive stages.
+Use this coordinator for the explicitly requested four-stage project. Use [task-routing.md](references/task-routing.md) to distinguish it from focused explanations and paper analysis. Route a focused research question to `researchskills`, or collection classification/organization to `research-papers`, without starting project stages. Do not route back merely because those tasks involve research.
 
 For a full research project, run the original four stages in order. Complete useful work within the current stage, show a concrete result, and wait for the user's acceptance before starting the next stage. The goal is a question-led account of what others have done, what remains unresolved, and which methods could address it.
 
@@ -17,17 +17,15 @@ Accept the researcher's natural description of completed work, observations, and
 
 Use an existing specific subfield or question as the starting scope instead of forcing broad topic selection. Reuse verified earlier stage decisions. Intake is preparation for the current task, not an extra approval gate or permission to bypass existing gates.
 
-For field learning or research planning, calibrate depth through `research-foundations`: give a concise, referenced explanation of the concepts needed for the immediate decision, then use a few applied understanding checks where background is uncertain. Reuse demonstrated expertise, accept a request to skip the check, and avoid a beginner course for an experienced researcher. A papers-only request does not require a quiz before inventory or analysis.
+Reuse the 1/2/3 depth chosen through `researchskills`. If no level is supplied, clearly implied or inherited, ask once with brief descriptions: 1 quick understanding (core idea and caveat), 2 research analysis (mechanisms, methods and evidence), 3 deep critical analysis (alternatives, assumptions and decisive checks). Recommend 2 but wait for the user's choice before substantive stage work. Do not repeat this question in supporting skills or related follow-ups. Explain prerequisites as part of the current work and reuse demonstrated knowledge. Training, tests and learning plans are optional outputs requested by the user, not an entry requirement. Depth selection is separate from the four project stages.
 
-## Run the reasoning consultation automatically
+## Check consequential reasoning within the task
 
-Identify a bounded question when competing explanations, uncertain method transfer, identifiability, or an experimental choice could change the current decision. State what the answer would change. Use [model-routing.md](references/model-routing.md) to handle the entire consultation: assemble the context, create a chat in the same verified project, submit the question, wait for its completed answer, verify it, and revise the active work. The coordinator fills and sends the [consultation brief](assets/deep-research-handoff.md); the user does not need to find or paste a prompt.
+Identify a bounded question when competing explanations, uncertain method transfer, identifiability, or an experimental choice could change the decision. Analyze it in the current task, using a bounded subagent check when available and useful. Follow [model-routing.md](references/model-routing.md) for delegation or an explicitly requested separate consultation. Keep the user's currently verified model choice; the research skill does not impose a model or product preference.
 
-Use standing human authorization for automatic same-project consultations without asking again for each question. A newer automatic-routing instruction supersedes an earlier prepare-only choice. A public skill's defaults do not authorize chat creation for an unrelated future user; reuse actual user instructions or ask once if that authorization is absent. Prepare-only is an explicit opt-out, not the normal delivery.
+Only create a separate user-owned chat when the user explicitly requests that action and the available tools support it. A depth-3 request, skill button, empty template or old automatic-routing default does not request a new chat. Reuse actual authorization for follow-ups within its scope. The [consultation brief](assets/deep-research-handoff.md) is optional supporting context, not a mandatory dispatch step.
 
-The preferred destination is regular ChatGPT Chat with the exact requested 6-Pro model; use ChatGPT Thinking when Pro is unavailable. Any Work/Codex route uses GPT-6.1 Sol. These are separate product routes: never label a Work/Codex reasoning run as ChatGPT Pro. Prefer the app's supported chat tools and verify destination, model, and project capabilities at use time. An unavailable route is a capability gap, not a reason to silently substitute a model or require copying a prompt.
-
-Wait before applying decisions that depend on the answer; continue only independent work in the current stage. Retrieve the full answer, check decisive claims and citations, then record adopted recommendations, rejected claims, remaining uncertainty, and the resulting artifact revision. A model's answer is a proposal, not independent scientific evidence or user acceptance. Do not spawn recursive consultations or advance a stage while its decision is unsettled.
+Verify decisive claims and citations before applying returned recommendations. Record useful changes and remaining uncertainty. A model answer is a proposal, not independent scientific evidence or user acceptance; it cannot advance a stage by itself.
 
 ## Determine the current stage
 
@@ -66,7 +64,7 @@ For each substantive experimental recommendation, include a referenced account o
 
 ## Learning and design are supporting work
 
-`research-foundations` helps with a prerequisite inside the active stage. `research-test-design` assesses whether a question is tractable and extracts useful experimental guidance. These are helpers, not extra stages or ways to bypass acceptance. Within stage 2, their output is a feasibility/design sketch; execution of a new study is outside this four-stage workflow unless separately requested.
+`researchskills` supplies explanations, paper/figure evidence and the selected analysis depth inside the active stage. `research-test-design` assesses whether a question is tractable and extracts useful experimental guidance. These are supporting capabilities, not extra stages or ways to bypass acceptance. Within stage 2, design output remains a feasibility/design sketch; execution of a new study is outside this four-stage workflow unless separately requested.
 
 `research-papers` can supply bounded reading, comparison, and classification evidence to any active stage. Limit its output to that stage's decision: invoking it within stage 1 or 2 does not authorize a full stage-4 review. A separately requested standalone paper report is allowed and remains distinct from the project's accepted review. Reusing that report later requires reconciling its scope, sources, and corpus version at the applicable checkpoint.
 
