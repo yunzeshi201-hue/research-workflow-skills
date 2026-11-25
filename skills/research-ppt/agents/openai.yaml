@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research PPT"
+  short_description: "Build research slides with evidence and consistent typography"
+  default_prompt: "Use $research-ppt to make a research presentation from my figures and existing template."

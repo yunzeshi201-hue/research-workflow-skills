@@ -7,7 +7,13 @@ description: "Research entry point for concept and method explanations, paper re
 
 Use this as the main research entry point, including a short explanation of a concept or method. It works without a manuscript, research-stage record, or existing paper library. Answer a focused explanation directly; resolve an external library only when the work needs saved papers or evidence. Keep reusable methods here and research findings in the user's external project or output location.
 
+## Research presentation authoring
+
+For a request to make or edit a research or spectroscopy class PPT, use [research-ppt](../research-ppt/SKILL.md) directly with the current brief and materials. The presentation skill owns slide structure, mechanism explanation, typography and delivery. The depth choice below applies to substantive research explanation and analysis. For a request to choose a storyline or approve an outline first, follow the planning route below.
+
 ## Choose depth 1, 2, or 3
+
+For requests to select figures and papers, arrange a talk/review storyline, or show an outline for user confirmation before authoring from existing materials, use `research-storyline` when installed. Otherwise, propose an outline and wait for the user to confirm it before authoring. Carry the material paths, audience/topic, and prior decisions. Its planning workflow handles the brief directly without a separate depth-selection question. Return here for bounded evidence interpretation if needed, and preserve the user's storyline-confirmation boundary before PPT or full-text authoring.
 
 | Level | User-facing choice | Work to provide |
 |---|---|---|
@@ -41,6 +47,7 @@ The figure-analysis route covers transient absorption (TAS), femtosecond stimula
 
 | Request | Read next and proceed |
 |---|---|
+| Choose figures/papers and their order for a talk or review before authoring | Use `research-storyline` when available, or propose an outline using the material paths and audience/topic; retain its concrete-outline confirmation before production |
 | Explain a concept, field or method | Answer here at the selected depth; read [learn-and-audit.md](references/learn-and-audit.md) only for a requested learning plan or assessment |
 | Read a paper, extract its evidence, or distill papers to Markdown | [read-distill.md](references/read-distill.md) |
 | Analyze a paper folder, produce a collection report, or classify/organize papers | Use `research-papers` for the bounded inventory, report and file plan; retain the selected depth and its file-operation approval boundary. One-off questions about a few supplied excerpts stay here and do not start a collection workflow. |
